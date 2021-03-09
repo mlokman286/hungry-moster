@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hungry Monster</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+
+<body>
+    <section class="container">
+        <nav class="navbar navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand fs-6">
+                    <div class="">
+                        <img class="rounded-circle w-25" src="hungry-monster.jpg" alt="">
+                        <p>Hungry Monster</p>
+                    </div>
+                </a>
+                <div>
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link link-dark fw-bolder" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-dark fw-bolder" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-dark fw-bolder" href="#">Recipes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-dark fw-bolder" href="#">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div>
+            <div class="d-flex justify-content-center">
+                <input id="search" class="form-control w-25" type="text" placeholder="Search">
+                <button onclick="searchFood()" class="btn  bg-warning">Search</button>
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+        <div id="food-item" class="mt-5 row row-cols-4"></div>
+        <div id='details' style="display:none;"></div>
+    </main>
+
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
