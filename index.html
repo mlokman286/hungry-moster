@@ -39,15 +39,21 @@
             </div>
         </nav>
 
-        <div>
+        <div class="sticky-top">
+            <!-- Catagories =  Beef,Chicken,Dessert,Lamb,Miscellaneous,Pasta,Pork,Seafood,
+                Side,Starter,Vegan,Vegetarian,Breakfast,Goat-->
             <div class="d-flex justify-content-center">
-                <input id="search" class="form-control w-25" type="text" placeholder="Search">
+                <input id="search" class="form-control w-25" type="text" placeholder="Search by Catagories">
                 <button onclick="searchFood()" class="btn  bg-warning">Search</button>
             </div>
         </div>
     </section>
 
     <main class="container">
+        <div id='random' class="m-5">
+            <p class="fs-3">You can search by Beef, Chicken, Dessert, Lamb, Miscellaneous, Pasta, Pork, Seafood,
+                Side, Starter, Vegan, Vegetarian, Breakfast, Goat Catagories</p>       
+        </div>
         <div id="food-item" class="mt-5 row row-cols-4"></div>
         <div id='details' style="display:none;"></div>
     </main>
