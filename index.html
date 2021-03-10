@@ -16,14 +16,15 @@
             <div class="container-fluid">
                 <a class="navbar-brand fs-6">
                     <div class="">
-                        <img class="rounded-circle w-25" src="hungry-monster.jpg" alt="">
+                        <img onclick="location.reload()" class="rounded-circle w-25" src="hungry-monster.jpg" alt="">
                         <p>Hungry Monster</p>
                     </div>
                 </a>
                 <div>
                     <ul class="nav justify-content-end">
                         <li class="nav-item">
-                            <a class="nav-link link-dark fw-bolder" aria-current="page" href="#">Home</a>
+                            <a class="nav-link link-dark fw-bolder" onclick="location.reload()" aria-current="page"
+                                href="#">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link link-dark fw-bolder" href="#">About</a>
@@ -39,25 +40,25 @@
             </div>
         </nav>
 
-        <div class="sticky-top">
+        <div>
             <!-- Catagories =  Beef,Chicken,Dessert,Lamb,Miscellaneous,Pasta,Pork,Seafood,
                 Side,Starter,Vegan,Vegetarian,Breakfast,Goat-->
             <div class="d-flex justify-content-center">
                 <input id="search" class="form-control w-25" type="text" placeholder="Search by Catagories">
-                <button onclick="searchFood()" class="btn  bg-warning">Search</button>
+                <button onclick="searchFood()" class="btn  bg-warning text-white">Search</button>
             </div>
         </div>
     </section>
 
     <main class="container">
         <div id='random' class="m-5">
-            <p class="fs-3">You can search by Beef, Chicken, Dessert, Lamb, Miscellaneous, Pasta, Pork, Seafood,
-                Side, Starter, Vegan, Vegetarian, Breakfast, Goat Catagories</p>       
+            <p class="fs-3">Search by these Catagories:Beef, Chicken, Dessert, Lamb, Miscellaneous, Pasta, Pork,
+                Seafood,
+                Side, Starter, Vegan, Vegetarian, Breakfast, Goat</p>
         </div>
         <div id="food-item" class="mt-5 row row-cols-4"></div>
         <div id='details' style="display:none;"></div>
     </main>
-
 
     <!-- JavaScript File -->
     <script src="script.js"></script>
